@@ -1,0 +1,22 @@
+{
+  "name": "google-tasks",
+  "version": "0.1.0",
+  "description": "Manage Google Tasks securely through a local MCP server.",
+  "author": {
+    "name": "zakikero"
+  },
+  "interface": {
+    "displayName": "Google Tasks",
+    "shortDescription": "Use Google Tasks in Codex.",
+    "longDescription": "List and manage Google Tasks through OAuth 2.0. Task deletion requires an explicit confirmation.",
+    "developerName": "zakikero",
+    "category": "Productivity",
+    "capabilities": ["Interactive", "Read", "Write"],
+    "defaultPrompt": [
+      "Show my open Google Tasks.",
+      "Create a Google Task for tomorrow.",
+      "Mark my next task complete."
+    ]
+  },
+  "mcpServers": "./.mcp.json"
+}
