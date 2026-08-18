@@ -1,5 +1,5 @@
 {
-  "name": "google-tasks",
+  "name": "google-task-mcp",
   "version": "0.1.0",
   "description": "Manage Google Tasks securely through a local MCP server.",
   "author": {
@@ -7,7 +7,7 @@
   },
   "license": "MIT",
   "interface": {
-    "displayName": "Google Tasks",
+    "displayName": "Google Task MCP",
     "shortDescription": "Use Google Tasks in Codex.",
     "longDescription": "List and manage Google Tasks through OAuth 2.0. Task deletion requires an explicit confirmation.",
     "developerName": "zakikero",

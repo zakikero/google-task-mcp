@@ -1,4 +1,4 @@
-# Google Tasks for Codex
+# Google Task MCP
 
 A local MCP server and Codex plugin for listing, creating, updating, completing, uncompleting, and deleting Google Tasks. It uses OAuth 2.0 and requests only the Google Tasks scope:
 
@@ -48,7 +48,7 @@ args: <absolute-repository-path>/server/index.js
 
 After Codex connects, call `google_tasks_get_authorization_url`, open the returned URL, approve access, and call `google_tasks_complete_authorization`.
 
-The refresh token is stored locally at `%APPDATA%\\codex-google-tasks\\token.json` by default. Set `GOOGLE_TASKS_TOKEN_PATH` to choose a different local path. Remove that file to disconnect the account.
+The refresh token is stored locally at `%APPDATA%\\google-task-mcp\\token.json` by default. Set `GOOGLE_TASKS_TOKEN_PATH` to choose a different local path. Remove that file to disconnect the account.
 
 ## Tools and safety
 

@@ -9,7 +9,7 @@ import { z } from "zod";
 
 const TASKS_SCOPE = "https://www.googleapis.com/auth/tasks";
 const REDIRECT_URI = process.env.GOOGLE_TASKS_REDIRECT_URI || "http://127.0.0.1:53682/oauth2callback";
-const TOKEN_PATH = process.env.GOOGLE_TASKS_TOKEN_PATH || join(process.env.APPDATA || homedir(), "codex-google-tasks", "token.json");
+const TOKEN_PATH = process.env.GOOGLE_TASKS_TOKEN_PATH || join(process.env.APPDATA || homedir(), "google-task-mcp", "token.json");
 let pendingAuthorization = null;
 
 function text(value) {
@@ -97,7 +97,7 @@ async function finishAuthorization() {
   return text("Google Tasks authorization completed. You can now use task tools.");
 }
 
-const server = new McpServer({ name: "google-tasks", version: "0.1.0" });
+const server = new McpServer({ name: "google-task-mcp", version: "0.1.0" });
 server.tool("google_tasks_get_authorization_url", "Start local OAuth 2.0 authorization and return the URL the user must open in a browser.", {}, async () => text({ authorizationUrl: await beginAuthorization(), expiresInSeconds: 600 }));
 server.tool("google_tasks_complete_authorization", "Confirm the browser OAuth callback has completed and save the local token.", {}, finishAuthorization);
 server.tool("google_tasks_list_tasklists", "List the user's Google Tasks lists.", {}, async () => {

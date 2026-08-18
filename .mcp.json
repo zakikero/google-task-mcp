@@ -1,6 +1,6 @@
 {
   "mcpServers": {
-    "google-tasks": {
+    "google-task-mcp": {
       "command": "node",
       "args": ["${pluginRoot}/server/index.js"]
     }
