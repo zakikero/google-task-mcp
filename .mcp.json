@@ -2,7 +2,17 @@
   "mcpServers": {
     "google-task-mcp": {
       "command": "node",
-      "args": ["${pluginRoot}/server/index.js"]
+      "args": ["./server/index.js"],
+      "cwd": ".",
+      "env_vars": [
+        "GOOGLE_TASKS_CLIENT_ID",
+        "GOOGLE_TASKS_CLIENT_SECRET",
+        "GOOGLE_TASKS_REDIRECT_URI",
+        "GOOGLE_TASKS_TOKEN_PATH",
+        "APPDATA",
+        "USERPROFILE",
+        "PATH"
+      ]
     }
   }
 }

@@ -8,15 +8,23 @@
   "type": "module",
   "scripts": {
     "start": "node server/index.js",
-    "check": "node --check server/index.js"
+    "check": "node --check server/index.js && node --check server/config.js && node --check server/google-auth.js && node --check server/mcp-result.js && node --check server/tools.js",
+    "test": "node --test",
+    "verify": "npm run check && npm test"
   },
   "engines": {
     "node": ">=20"
   },
-  "keywords": ["codex", "google-tasks", "mcp", "model-context-protocol"],
+  "keywords": [
+    "codex",
+    "google-tasks",
+    "mcp",
+    "model-context-protocol"
+  ],
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.12.0",
-    "googleapis": "^144.0.0",
+    "dotenv": "^16.4.7",
+    "googleapis": "^175.0.0",
     "zod": "^3.24.0"
   }
 }
