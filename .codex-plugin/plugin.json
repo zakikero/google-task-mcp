@@ -5,6 +5,7 @@
   "author": {
     "name": "zakikero"
   },
+  "license": "MIT",
   "interface": {
     "displayName": "Google Tasks",
     "shortDescription": "Use Google Tasks in Codex.",

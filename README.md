@@ -63,3 +63,7 @@ Run `npm run check` for a syntax check. OAuth/API calls require configured crede
 ## Privacy
 
 OAuth credentials and task data remain on the local machine except for requests sent directly to Google's APIs. Never commit `.env` or the generated token file. Both are excluded by `.gitignore`.
+
+## License
+
+Released under the [MIT License](LICENSE).
