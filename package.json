@@ -1,7 +1,7 @@
 {
   "name": "google-task-mcp",
   "version": "0.1.0",
-  "description": "A local MCP server and Codex plugin for securely managing Google Tasks.",
+  "description": "TaskBridge is a local MCP server and Codex plugin for securely managing Google Tasks.",
   "author": "zakikero",
   "license": "MIT",
   "private": true,

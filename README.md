@@ -1,6 +1,8 @@
-# Google Tasks MCP
+# TaskBridge
 
-Use Google Tasks from Codex or any MCP client that can run a local STDIO server. The server can list task lists and tasks, create or edit tasks, mark tasks complete, and delete tasks after explicit confirmation.
+TaskBridge lets you use Google Tasks from Codex or any MCP client that can run a local STDIO server. It can list task lists and tasks, create or edit tasks, mark tasks complete, and delete tasks after explicit confirmation.
+
+<img src="assets/taskbridge-icon.png" alt="TaskBridge icon" width="160">
 
 Everything runs locally. The server talks directly to the Google Tasks API and stores the OAuth token on your computer.
 

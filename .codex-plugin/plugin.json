@@ -1,18 +1,25 @@
 {
   "name": "google-task-mcp",
-  "version": "0.1.0",
-  "description": "Manage Google Tasks securely through a local MCP server.",
+  "version": "0.1.0+codex.20260820152450",
+  "description": "TaskBridge securely connects Codex to Google Tasks through a local MCP server.",
   "author": {
     "name": "zakikero"
   },
   "license": "MIT",
   "interface": {
-    "displayName": "Google Task MCP",
-    "shortDescription": "Use Google Tasks in Codex.",
-    "longDescription": "List and manage Google Tasks through OAuth 2.0. Task deletion requires an explicit confirmation.",
+    "displayName": "TaskBridge",
+    "shortDescription": "Manage Google Tasks in Codex.",
+    "longDescription": "Connect Codex to Google Tasks through local OAuth 2.0. List, create, update, complete, and safely delete tasks.",
     "developerName": "zakikero",
     "category": "Productivity",
-    "capabilities": ["Interactive", "Read", "Write"],
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "brandColor": "#13C8B4",
+    "composerIcon": "./assets/taskbridge-icon.png",
+    "logo": "./assets/taskbridge-icon.png",
     "defaultPrompt": [
       "Show my open Google Tasks.",
       "Create a Google Task for tomorrow.",
